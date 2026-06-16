@@ -6,6 +6,7 @@ import snownee.jade.api.IWailaPlugin;
 import snownee.jade.api.WailaPlugin;
 import twilightforest.block.ChiseledCanopyShelfBlock;
 import twilightforest.block.DryingRackBlock;
+import twilightforest.entity.MagicPainting;
 import twilightforest.entity.passive.QuestRam;
 
 @WailaPlugin
@@ -16,6 +17,7 @@ public class JadeCompat implements IWailaPlugin {
 		registration.registerEntityComponent(QuestRamWoolProvider.INSTANCE, QuestRam.class);
 		registration.registerBlockComponent(ChiseledBookshelfSpawnProvider.INSTANCE, ChiseledCanopyShelfBlock.class);
 		registration.registerBlockComponent(DryingRackProvider.INSTANCE, DryingRackBlock.class);
+		registration.registerEntityComponent(MagicPaintingProvider.INSTANCE, MagicPainting.class);
 	}
 
 	@Override
